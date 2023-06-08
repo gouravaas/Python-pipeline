@@ -3,7 +3,7 @@ pipeline {
 		label 'ubuntu-slave'
 		}
 	stages {
-		stage ("pull scm") {
+		stage ("pull scm python") {
 			steps {
 				git branch: 'python', url: 'https://github.com/gouravaas/Python-pipeline.git'
 				}
